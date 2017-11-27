@@ -3,7 +3,7 @@ import java.lang.*;
 
 public class Calculette {
 	// Membre ( s ) d’instance
-	private double res;
+	private double res;  // Result definition  
 
 
 	// Membre ( s ) de classe
@@ -44,11 +44,11 @@ public class Calculette {
 		char op;
 
 		// Saisie des opérandes et de l’opération
-		Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+		Scanner sc = new Scanner(System.in).useLocale(Locale.US); // use EN keyboard
 		System.out.println("Saisir le calcul à faire avec des espaces : ");
-		v1 = sc.nextDouble();
-		op = sc.next(".").charAt(0);
-		v2 = sc.nextDouble();
+		v1 = sc.nextDouble();  // read what user entered and store it in v1
+		op = sc.next(".").charAt(0);  // read what user entered and store it in op
+		v2 = sc.nextDouble();  // read what user entered and store it in v2
 
 		// Exécution de l'opération demandée
 		switch ( op ) {
