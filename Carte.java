@@ -12,7 +12,11 @@ public class Carte{
 
         for(int x = 0; x < 20; x++) {
             for(int y = 0; y < 20; y++) {
-                
+
+                if(x==0 && y==0){
+                    board[x][y] = 'X';
+                }
+
                 board[x][y] = herbe;
 
                 
@@ -54,6 +58,7 @@ public class Carte{
                 //     }     
                 // }        
                 System.out.print(board[x][y]);
+
             }
 
             System.out.println();

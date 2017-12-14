@@ -8,8 +8,11 @@ public class FindLetter{
 		int i = 0;
 		char c = copierDeMoi.charAt(i);
 		while(c != 'n'){
-			//copierVersMoi.append(c);
-			c = copierVersMoi.charAt(i++);
+
+			// copierVersMoi.append(c);
+			c = copierDeMoi.charAt(i++);
+			copierVersMoi.append(c);
+			System.out.println(c);
 		}
 		System.out.println(copierVersMoi);
 	}
